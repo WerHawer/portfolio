@@ -1,0 +1,13 @@
+<h2 class="h2">Search results</h2>
+
+<div class="search-results">
+<ul class="list result-list">
+    {{#if result}}
+    {{#each result}}
+    <li class="list-element" data-url={{this.url}} data-type={{this.type}}>{{this.name}} ({{this.type}})</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No results of your request</li>
+    {{/if}}
+</ul>
+</div>

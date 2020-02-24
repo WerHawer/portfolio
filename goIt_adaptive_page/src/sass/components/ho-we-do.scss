@@ -1,0 +1,78 @@
+.how-we-do {
+    @include nameSection;
+    &__list {
+        display: block;
+        padding: 0;
+    }
+    &__discription {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__planet::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/1.png);
+        background-color: #feefd4;
+        background-size: 34px 34px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/1@2x.png);
+        }
+    }
+    &__hand::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/2.png);
+        background-color: #ffe0d6;
+        background-size: 34px 34px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/2@2x.png);
+        }
+    }
+    &__peace::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/3.png);
+        background-color: #e6dcf9;
+        background-size: 26px 37px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/3@2x.png);
+        }
+    }
+    &__money::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/4.png);
+        background-color: #cceeec;
+        background-size: 37px 36px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/4@2x.png);
+        }
+    }
+    &__lamp::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/5.png);
+        background-color: #e6dcf9;
+        background-size: 34px 34px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/5@2x.png);
+        }
+    }
+    &__paper::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/6.png);
+        background-color: #ffe0d6;
+        background-size: 35px 35px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/6@2x.png);
+        }
+    }
+    &__goal::before {
+        @include beforeHowWeDo;
+        background-image: url(../images/7.png);
+        background-color: #feefd4;
+        background-size: 34px 34px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/7@2x.png);
+        }
+    }
+}

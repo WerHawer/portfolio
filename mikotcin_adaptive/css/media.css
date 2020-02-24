@@ -1,0 +1,271 @@
+@media(max-width: 1200px) {
+    .wrapper {
+        max-width: 900px;
+    }
+    .header__main-img {
+        display: none;
+        z-index: 0;
+    }
+    .header__top {
+        width: 95%;
+    }
+    .header__container-info {
+        justify-content: space-between;
+        align-self: center;
+        width: 80%;
+    }
+    .h2::before {
+        left: 50%;
+    }
+    .h2::after {
+        left: 54%;
+    }
+    .infection__img-container {
+        flex-direction: column;
+    }
+    .how .wrapper {
+        padding: 190px 15px 35px 15px;
+    }
+}
+
+@media(max-width: 901px) {
+    .wrapper {
+        max-width: 768px;
+    }
+    .header__top {
+        width: 87%;
+        justify-content: flex-start;
+    }
+    .logo {
+        margin-right: 20px;
+    }
+    .acivment__list {
+        flex-grow: 1;
+    }
+    .header__container-info {
+        align-items: flex-start;
+        width: 94%;
+    }
+    .h2::after {
+        left: 55%;
+    }
+    .infection .wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .infection__results {
+        margin-right: 30px;
+    }
+    .other-pills__h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .other-pills__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .other-pills__element--container {
+        padding: 70px 27px 65px;
+    }
+    .but__h3 {
+        font-size: 20px;
+    }
+    .other-pills__what {
+        font-size: 13px;
+    }
+    .but__description {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .why-we__question--text {
+        font-size: 25px;
+    }
+    .why-we__elements {
+        padding: 80px 10px 26px;
+    }
+}
+
+@media(max-width: 767px) {
+    .wrapper {
+        min-width: none;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .header__container-info {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 94%;
+    }
+    .header {
+        background-size: cover;
+    }
+    .header__top {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    .logo {
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+    .acivment__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .acivmen__element {
+        margin-bottom: 2px;
+        padding-bottom: 25px;
+    }
+    .header__form {
+        margin-bottom: 30px;
+    }
+    .header__options {
+        width: 100%;
+        min-width: 300px;
+    }
+    .options__h2 {
+        padding-right: 0;
+        margin-bottom: 45px;
+    }
+    .options__elements {
+        margin-bottom: 60px;
+    }
+    .h2 {
+        font-size: 40px;
+    }
+    .infection__underhead {
+        font-size: 22px;
+    }
+    .infection__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .result__name {
+        display: block;
+        font-size: 20px;
+    }
+    .infection__results {
+        margin-right: 0;
+        width: 100%;
+    }
+    .result_img {
+        margin-right: 0;
+        align-self: center;
+    }
+    .other-pills__list {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .other-pills__element {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .other-pills__element--container {
+        padding: 70px 47px 65px;
+    }
+    .other-pills__h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .other-pills__description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .but__h3 {
+        font-size: 24px;
+    }
+    .but__description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .other-pills__what {
+        font-size: 16px;
+    }
+    .other-pils__conclusion--text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .why-we__underhead {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .why-we__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-we__elements {
+        margin-bottom: 75px;
+    }
+    .why-we__elements:last-child {
+        margin-bottom: 0;
+    }
+    .why-we__question--text {
+        font-size: 27px;
+        line-height: 45px;
+    }
+    .how__img {
+        display: none;
+    }
+}
+
+@media(max-width: 650px) {
+    .acivment__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 375px) {
+    .h2 {
+        font-size: 32px;
+    }
+    .options__h2 {
+        font-size: 32px;
+        padding-left: 7px;
+    }
+    .other-pills__element--container {
+        padding: 70px 15px 65px;
+    }
+    .element__text {
+        font-size: 16px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .header {
+        background-image: url(../img/bgr@2X.jpeg);
+        background-size: cover;
+    }
+    .header__main-img {
+        background-image: url(../img/main_img@x2.png);
+        background-size: contain;
+    }
+    .result_img--alergy {
+        background-image: url(../img/alergy@2x.jpg);
+    }
+    .result_img--finger {
+        background-image: url(../img/finger@2x.jpg);
+    }
+    .result_img--organs {
+        background-image: url(../img/organs@2x.jpg);
+    }
+    .infection__stat::before {
+        background-image: url(../img/ico/diagramma@2x.png);
+    }
+    .why-we__elements--mikotcin::after {
+        background-image: url(../img/ico/tablet@2X.png);
+        background-size: 80px 56px;
+    }
+    .why-we__elements--natural::after {
+        background-image: url(../img/ico/natural@2X.png);
+        background-size: contain;
+    }
+    .why-we__elements--cream::after {
+        background-image: url(../img/ico/cream@2X.png);
+        background-size: contain;
+    }
+}

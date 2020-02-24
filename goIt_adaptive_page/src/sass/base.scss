@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $main-font-article;
+    color: $main-font-color;
+}
+
+.link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+}

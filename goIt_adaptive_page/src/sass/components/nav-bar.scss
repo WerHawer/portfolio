@@ -1,0 +1,97 @@
+.nav-bar {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 34px;
+    position: relative;
+    &__background {
+        padding-bottom: 40px;
+        background-image: url(../images/img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/img@2x.jpg);
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    &__menu {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 300px;
+    }
+    &__burger {
+        background: url(../images/burger.png);
+        width: 28px;
+        height: 19px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/burger@2x.png);
+        }
+    }
+    &__right-button {
+        display: block;
+        border-style: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        background-position: center;
+        background-size: cover;
+    }
+    &__arrows {
+        width: 20px;
+        height: 21px;
+        background-color: transparent;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 40px;
+        &--image {
+            background-image: url(../images/Scroll-down.png);
+            background-size: cover;
+            background-position: center;
+            width: 13px;
+            height: 9px;
+            background-repeat: no-repeat;
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                background-image: url(../images/Scroll-down@2x.png);
+            }
+        }
+    }
+}
+
+.nav__menu {
+    display: none;
+    width: 80%;
+    align-items: center;
+    &--list {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        align-items: center;
+    }
+    &--i {
+        font-family: $main-font-article;
+        font-weight: bold;
+        color: $h1-font-color;
+        border-bottom: 2px solid transparent;
+        margin-right: 20px;
+        &:hover {
+            border-bottom: 2px solid #fcae26;
+        }
+    }
+    &--link {
+        font-size: 18px;
+        color: $h1-font-color;
+    }
+}

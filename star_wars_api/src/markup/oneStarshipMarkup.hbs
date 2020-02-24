@@ -1,0 +1,51 @@
+ 
+    <h2 class="h2">{{name}}</h2>
+
+<div class="starship__description">
+
+    <div class="starship__characteristics div-block-3">
+    <h3 class="h3">Characteristics</h3>
+    <ul class="list">
+        <li class="list-element-nh">Model: {{model}}</li>
+        <li class="list-element-nh">Manufacturer: {{manufacturer}}</li>
+        <li class="list-element-nh">Cost in credits: {{cost_in_credits}}</li>
+        <li class="list-element-nh">length: {{length }}</li>
+        <li class="list-element-nh">Max atmosphering speed: {{max_atmosphering_speed}}</li>
+        <li class="list-element-nh">Crew: {{crew}}</li>
+        <li class="list-element-nh">Passengers: {{passengers}}</li>
+        <li class="list-element-nh">Cargo capacity: {{cargo_capacity}}</li>
+        <li class="list-element-nh">Consumables: {{consumables}}</li>
+        <li class="list-element-nh">Hyperdrive rating: {{hyperdrive_rating}}</li>
+        <li class="list-element-nh">MGLT: {{MGLT}}</li>
+        <li class="list-element-nh">Starship class: {{starship_class}}</li>
+    </ul>
+</div>
+
+<div class="starship__pilots div-block-3">
+    <h3 class="h3">Pilots</h3>
+<ul class="list">
+    {{#if pilots}}
+    {{#each pilots}}
+    <li class="list-element" data-url={{this.path}} data-type="people">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No pilots</li>
+    {{/if}}
+</ul>
+    </div>
+
+    <div class="starship__films div-block-3">
+    <h3 class="h3">Films</h3>
+<ul class="list">
+    {{#if films}}
+    {{#each films}}
+    <li class="list-element" data-url={{this.path}} data-type="film">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No films</li>
+    {{/if}}
+</ul>
+</div>
+
+
+</div>

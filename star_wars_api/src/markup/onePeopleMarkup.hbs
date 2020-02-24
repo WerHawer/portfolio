@@ -1,0 +1,60 @@
+
+<h2 class="h2">{{name}}</h2>
+
+<div class="people__description">
+
+<div class="people__characteristics div-block-4">
+    <h3 class="h3">Characteristics</h3>
+    <ul class="people__list list">
+    <li class="list-element-nh people__list-element">Height: {{height}}</li>
+    <li class="list-element-nh people__list-element">Mass: {{mass}}</li>
+    <li class="list-element-nh people__list-element">Hair color: {{hair_color}}</li>
+    <li class="list-element-nh people__list-element">Skin color: {{skin_color}}</li>
+    <li class="list-element-nh people__list-element">Eye color: {{eye_color}}</li>
+    <li class="list-element-nh people__list-element">Birth year: {{birth_year}}</li>
+    <li class="list-element-nh people__list-element">Gender: {{gender}}</li>
+    <li  class="list-element people__list-element"data-url={{homeworld.path}} data-type="planet">Homeworld: {{homeworld.name}}</li>
+
+    </ul>
+    </div>
+
+    <div class="people__films div-block-4">
+    <h3 class="h3">Films</h3>
+<ul class="people__list list">
+    {{#if films}}
+    {{#each films}}
+    <li class="list-element people__list-element" data-url={{this.path}} data-type="film">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No films</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="people__vehicles div-block-4">
+    <h3 class="h3">Vehicles</h3>
+<ul class="people__list list">
+    {{#if vehicles}}
+    {{#each vehicles}}
+    <li class="list-element people__list-element" data-url={{this.path}} data-type="vehicle">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No vehicles</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="people__starships div-block-4">
+    <h3 class="h3">Starships:</h3>
+<ul class="people__list list">
+    {{#if starships}}
+    {{#each starships}}
+    <li class="list-element people__list-element" data-url={{this.path}} data-type="starship">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No starships</li>
+    {{/if}}
+</ul>
+</div>
+
+</div>

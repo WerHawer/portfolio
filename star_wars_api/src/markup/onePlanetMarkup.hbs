@@ -1,0 +1,44 @@
+    <h2 class="h2">{{name}}</h2>
+
+<div class="planet__description">
+
+    <div class="planet__characteristics div-block-3">
+    <h3 class="h3">Characteristics:</h3>
+    <ul class="list">
+    <li class="list-element-nh">Rotation period: {{rotation_period}}</li>
+    <li class="list-element-nh">Orbital period: {{orbital_period}}</li>
+    <li class="list-element-nh">Diameter: {{diameter}}</li>
+    <li class="list-element-nh">Climate: {{climate}}</li>
+    <li class="list-element-nh">Gravity: {{gravity}}</li>
+    <li class="list-element-nh">Terrain: {{terrain}}</li>
+    <li class="list-element-nh">Population: {{population}}</li>
+    </ul>
+    </div>
+
+    <div class="planet__films div-block-3">
+    <h3 class="h3">Films:</h3>
+<ul class="list">
+    {{#if films}}
+    {{#each films}}
+    <li class="list-element" data-url={{this.path}} data-type="film">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No films</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="planet__residents div-block-3">
+    <h3 class="h3">Residents:</h3>
+<ul class="list">
+    {{#if residents}}
+    {{#each residents}}
+    <li class="list-element" data-url={{this.path}} data-type="people">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No residents</li>
+    {{/if}}
+</ul>
+</div>
+
+</div>

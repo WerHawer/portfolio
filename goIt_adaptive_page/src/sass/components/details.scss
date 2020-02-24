@@ -1,0 +1,62 @@
+    .details {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+        border-radius: 5px;
+        padding: 25px 40px 25px 45px;
+        background-color: #fafafa;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 60px;
+        }
+        &__h {
+            margin: 0;
+            font-size: 25px;
+            color: rgb(34, 34, 34);
+            font-weight: bold;
+        }
+        &__discription {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 40px;
+        }
+        &__years {
+            display: block;
+            margin: 0;
+            font-size: 30px;
+            font-family: "Open Sans";
+            color: rgb(252, 174, 38);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        &__years--text {
+            display: inline-block;
+            font-size: 13px;
+            color: rgb(252, 174, 38);
+            text-decoration: underline;
+            transform: translateY(-2em);
+        }
+        &__block-years {
+            &::after {
+                content: '';
+                display: block;
+                width: 19px;
+                height: 13px;
+                background: url(../images/arrow.png)
+            }
+        }
+    }
+    
+    .details:hover {
+        background-color: rgb(252, 174, 38);
+        & .details__years,
+        .details__discription,
+        .details__years--text {
+            color: white;
+        }
+        & .details__block-years {
+            &::after {
+                background: url(../images/arrow-hover.png)
+            }
+        }
+    }

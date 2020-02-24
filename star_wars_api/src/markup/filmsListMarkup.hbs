@@ -1,0 +1,11 @@
+<section class="all-films">
+
+<h2 class="h2">Films</h2>
+<ul class="film-list list" >
+    {{#each this}}
+    <li class="film-list__element list-element" data-url={{this.url}} data-type="film">{{this.title}}</li>
+    {{/each}}
+</ul>
+
+<button type="button" class="sort_btn" data-action="sort">Sort by name</button>
+</section>

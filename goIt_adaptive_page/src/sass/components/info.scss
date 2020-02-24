@@ -1,0 +1,56 @@
+.info {
+    margin-bottom: 60px;
+    &__h {
+        visibility: hidden;
+    }
+    &__blockquote {
+        width: 100%;
+        margin: 0 auto;
+        line-height: 20px;
+        font-size: 14px;
+        &::before {
+            content: '';
+            display: block;
+            width: 17px;
+            height: 13px;
+            background: url(../images/comas.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__img-block {
+        margin-bottom: 42px;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    &__img--big {
+        display: none;
+        width: 100%;
+    }
+    &__pathos {
+        width: 100%;
+        background-color: #824fe3;
+        border-radius: 5px;
+        padding: 45px;
+        padding-bottom: 30px;
+    }
+    &__pathos-text {
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        text-align: center;
+        &::before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            height: 3px;
+            width: 60px;
+            background-color: #fcae26;
+        }
+    }
+}

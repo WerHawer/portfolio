@@ -1,0 +1,60 @@
+<div class="one-film">
+
+
+<h2 class="h2">{{title}}</h2>
+<div class="one-film__description">
+
+<div class="one-film__characters div-block-4">
+<h3 class="h3">Characters</h3>
+<ul class="list one-film__list">
+    {{#if characters}}
+    {{#each characters}}
+    <li class="one-film__list-element list-element" data-url={{this.path}} data-type="people">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No characters</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="one-film__planets div-block-4">
+<h3 class="h3">Planets</h3>
+<ul class="list one-film__list">
+    {{#if planets}}
+    {{#each planets}}
+    <li class="one-film__list-element list-element" data-url={{this.path}} data-type="planet">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No planets</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="one-film__starships div-block-4">
+<h3 class="h3">Starships</h3>
+<ul class="list one-film__list">
+   {{#if starships}}
+    {{#each starships}}
+    <li class="one-film__list-element list-element" data-url={{this.path}} data-type="starship">{{{this.name}}}</li>
+    {{/each}}
+    {{else}}
+    <li class="no-result">No starships</li>
+    {{/if}}
+</ul>
+</div>
+
+<div class="one-film__vehicles div-block-4">
+<h3 class="h3">Vehicles</h3>
+<ul class="list one-film__list">
+    {{#if vehicles}}
+        {{#each vehicles}}
+        <li class="one-film__list-element  list-element" data-url={{this.path}} data-type="vehicle">{{{this.name}}}</li>
+        {{/each}}
+    {{else}}
+        <li class="no-result">No vehicles</li>
+    {{/if}}
+</ul>
+</div>
+</div>
+</div>
+
