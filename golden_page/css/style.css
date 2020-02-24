@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../fonts/RobotoSlab-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTS";
+    src: url(../fonts/PTSerif-RegularItalic.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* HEADER */
+
+.header-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 100px;
+    margin: 0 auto 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: #fed136;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+
+/* SERVICES */
+
+.wrapper-services,
+.wrapper-contact {
+    width: 940px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-services {
+    margin-bottom: 120px;
+}
+
+.wrapper-contact {
+    padding-top: 110px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-name {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.section-discription {
+    color: #777777;
+    font-family: "PTS";
+    font-size: 16px;
+    font-style: italic;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.service-conteiner {
+    width: 290px;
+    text-align: center;
+}
+
+.service-conteiner::before {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 26px;
+}
+
+.service-ico-basket::before {
+    background-image: url(../img/ico/Basket.png);
+}
+
+.service-ico-laptop::before {
+    background-image: url(../img/ico/Laptop.png);
+}
+
+.service-ico-lock::before {
+    background-image: url(../img/ico/Lock.png);
+}
+
+
+/* CONTACT FORM */
+
+.service-name {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-discription {
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-name {
+    color: #ffffff;
+}
+
+.section-form {
+    background: #222222;
+    background-image: url(../img/ico/Map_Image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-blend-mode: inherit;
+}
+
+.input,
+.input-message {
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding-left: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 29px;
+}
+
+.input::placeholder,
+.input-message::placeholder {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+.input-message {
+    height: 210px;
+    resize: none;
+    padding-top: 20px;
+}
+
+.submit-button {
+    width: 240px;
+    padding: 20px 0;
+    background-color: #fed136;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto 114px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input:valid:required,
+.input-message:valid {
+    outline: 2px solid #007f00;
+}
+
+input:invalid:required:focus,
+.input-message:invalid:focus {
+    outline: 2px solid #ff0000;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form-inputs {
+    width: 455px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form-message {
+    width: 455px;
+}

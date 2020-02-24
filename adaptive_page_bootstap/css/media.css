@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+        /*  BANNER 768*/
+        .banner {
+            min-height: 700px;
+            margin-bottom: 72px;
+            background-image: url(../img/bacground-img.jpg);
+        }
+        .header {
+            display: flex;
+            flex-direction: row-reverse;
+            min-height: 100px;
+            margin-bottom: 162px;
+        }
+        .login {
+            padding-top: 0;
+        }
+        .upper-button {
+            width: 226px;
+        }
+        /* MAIN 768*/
+        .second-head {
+            max-width: none;
+            margin-bottom: 32px;
+        }
+        .bottom-button {
+            width: 193px;
+        }
+        .people-card-lg {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    /* BANNER 1200*/
+    
+    .banner {
+        margin-bottom: 70px;
+    }
+    
+    .people-card {
+        margin-bottom: 0;
+    }
+    
+    .people-card-lg {
+        margin-bottom: 40px;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .banner {
+        background-image: url(../img/bacground-img-tablet_x_2.jpg);
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .banner {
+        background-image: url(../img/bacground-img_x_2.jpg);
+    }
+}

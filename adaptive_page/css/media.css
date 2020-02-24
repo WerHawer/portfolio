@@ -1,0 +1,92 @@
+    @media (min-width: 768px) {
+        /*  BANNER 768*/
+        .banner {
+            min-height: 700px;
+            margin-bottom: 72px;
+            background-image: url(../img/bacground-img.jpg);
+        }
+        .header {
+            width: 79.43%;
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 942px;
+            min-height: 100px;
+            margin-bottom: 162px;
+        }
+        .login {
+            padding-top: 0;
+        }
+        .main-head {
+            margin: 0 auto 40px;
+            max-width: 478px;
+        }
+        .main-head-under {
+            max-width: 400px;
+            margin-bottom: 34px;
+        }
+        .upper-button {
+            width: 226px;
+        }
+        /* MAIN 768*/
+        .wrapper {
+            width: 64%;
+            margin: 0 auto;
+        }
+        .second-head {
+            max-width: none;
+            margin-bottom: 32px;
+        }
+        .people-list {
+            width: 90%;
+            max-width: 599px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 39px;
+        }
+        .people-card {
+            margin-bottom: 57px;
+        }
+        .people-card:nth-child(4) {
+            order: 2;
+        }
+        .people-card:nth-child(2) {
+            order: 1;
+        }
+        .people-card:nth-child(2n) {
+            margin-bottom: 0;
+        }
+        .bottom-button {
+            width: 193px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        /* BANNER 1200*/
+        .banner {
+            margin-bottom: 70px;
+        }
+        .wrapper {
+            width: 65.4%;
+        }
+        .people-list {
+            width: 100%;
+            max-width: none;
+        }
+        .people-card {
+            margin-bottom: 0;
+        }
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        .banner {
+            background-image: url(../img/bacground-img-tablet_x_2.jpg);
+        }
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+        .banner {
+            background-image: url(../img/bacground-img_x_2.jpg);
+        }
+    }
