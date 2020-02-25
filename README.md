@@ -26,4 +26,4 @@ https://werhawer.github.io/portfolio/star_wars_api/build/
 
 React:
 
-https://werhawer.github.io/portfolio/react_photogalery/build/
+http://192.168.0.102:5000/ (Photogalery)
