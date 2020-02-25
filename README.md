@@ -26,4 +26,4 @@ https://werhawer.github.io/portfolio/star_wars_api/build/
 
 React:
 
-https://werhawer.github.io/portfolio/react_photogalery/build/
+https://werhawer.github.io/react_photogalery/
