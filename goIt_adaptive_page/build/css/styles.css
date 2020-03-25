@@ -951,17 +951,20 @@ body {
 }
 
 .nav-bar-modal {
-  display: none;
   position: absolute;
   width: 100%;
   background-color: #824fe3;
   top: 0;
   left: 0;
   color: #ffffff;
+  transform: translateX(100%);
+  transition: all 0.2s linear;
 }
 
 .nav-bar-modal__open {
   display: block;
+  transform: translateX(0);
+  transition: all 0.2s linear;
 }
 
 .nav-bar-modal__close {
