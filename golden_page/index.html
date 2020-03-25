@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homework_7</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header-wrapp">
-        <div class="logo">
-            <img src="img/ico/main_img.png" alt="logo">
-        </div>
-        <ul class="nav">
-            <li><a href="#">home</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
+      <div class="logo">
+        <img src="img/ico/main_img.png" alt="logo" />
+      </div>
+      <ul class="nav">
+        <li><a href="#">home</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <div class="navBtnMob"></div>
     </header>
 
     <!-- SERVICES -->
 
-    <Section class="wrapper-services">
-        <div class="title">
-            <h2 class="section-name">services</h2>
-            <span class="section-discription">Proin iaculis purus consequat sem cure. </span>
-        </div>
-        <ul class="services">
-            <li class="service-conteiner service-ico-basket">
-                <h3 class="service-name">E-Commerce</h3>
-                <p class="service-discription">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </li>
-            <li class="service-conteiner service-ico-laptop">
-                <h3 class="service-name">Responsive Web</h3>
-                <p class="service-discription">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </li>
-            <li class="service-conteiner service-ico-lock">
-                <h3 class="service-name">Web Security</h3>
-                <p class="service-discription">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-            </li>
-        </ul>
-    </Section>
+    <section class="wrapper-services">
+      <div class="title">
+        <h2 class="section-name">services</h2>
+        <span class="section-discription"
+          >Proin iaculis purus consequat sem cure.
+        </span>
+      </div>
+      <ul class="services">
+        <li class="service-conteiner service-ico-basket">
+          <h3 class="service-name">E-Commerce</h3>
+          <p class="service-discription">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="service-conteiner service-ico-laptop">
+          <h3 class="service-name">Responsive Web</h3>
+          <p class="service-discription">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+        <li class="service-conteiner service-ico-lock">
+          <h3 class="service-name">Web Security</h3>
+          <p class="service-discription">
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
+        </li>
+      </ul>
+    </section>
 
     <!-- CONTACT FORM -->
 
     <section class="section-form">
-        <div class="wrapper-contact">
-            <div class="title">
-                <h2 class="section-name contact-name">Contact us</h2>
-                <span class="section-discription">Proin iaculis purus consequat sem cure.</span>
-            </div>
-
-            <form action="" class="contact-form">
-                <div class="contact-form-inputs">
-                    <input class="input" type="text" name="user_name" placeholder="your Name *" required>
-                    <input class="input" type="email" name="user_email" placeholder="your e-mail *" required>
-                    <input class="input" type="text" name="subject" placeholder="subject">
-                </div>
-                <div class="contact-form-message">
-                    <textarea class="input-message" name="message" id="" cols="30" rows="10" placeholder="Your message *" required></textarea>
-                </div>
-
-                <button class="submit-button">Send Message</button>
-
-            </form>
+      <div class="wrapper-contact">
+        <div class="title">
+          <h2 class="section-name contact-name">Contact us</h2>
+          <span class="section-discription"
+            >Proin iaculis purus consequat sem cure.</span
+          >
         </div>
 
+        <form action="" class="contact-form">
+          <div class="contact-form-inputs">
+            <input
+              class="input"
+              type="text"
+              name="user_name"
+              placeholder="your Name *"
+              required
+            />
+            <input
+              class="input"
+              type="email"
+              name="user_email"
+              placeholder="your e-mail *"
+              required
+            />
+            <input
+              class="input"
+              type="text"
+              name="subject"
+              placeholder="subject"
+            />
+          </div>
+          <div class="contact-form-message">
+            <textarea
+              class="input-message"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message *"
+              required
+            ></textarea>
+          </div>
 
+          <button class="submit-button">Send Message</button>
+        </form>
+      </div>
     </section>
-
-</body>
-
+    <script src="./js/index.js"></script>
+  </body>
 </html>
