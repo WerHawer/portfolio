@@ -4,8 +4,6 @@ HTML/CSS:
 
 https://werhawer.github.io/portfolio/adaptive_page/
 
-https://werhawer.github.io/portfolio/adaptive_page_bootstap/
-
 https://werhawer.github.io/portfolio/golden_page/
 
 https://werhawer.github.io/portfolio/mart_page_1/
@@ -26,4 +24,6 @@ https://werhawer.github.io/portfolio/star_wars_api/build/
 
 React:
 
-https://werhawer.github.io/portfolio/react_photogalery/build/
+https://werhawer.github.io/react_photogalery/
+
+https://werhawer.github.io/todo_react/
