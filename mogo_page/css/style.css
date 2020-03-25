@@ -100,6 +100,10 @@ html {
   fill: #ffffff;
 }
 
+.menu-icon {
+  position: absolute;
+}
+
 .head-cursive,
 .head {
   display: block;
@@ -494,6 +498,7 @@ html {
   }
 
   .menu-icon {
+    position: static;
     width: 30px;
     height: 30px;
     background-image: url('../img/ico/menu-icon.png');
