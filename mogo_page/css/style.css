@@ -45,7 +45,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 46px;
 }
 
 .wrapper {
@@ -151,6 +150,10 @@ html {
 }
 
 /* SERVICES */
+
+.services {
+  padding-top: 46px;
+}
 
 .head-cursive--services,
 .head-cursive--team {
