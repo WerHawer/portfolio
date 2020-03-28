@@ -29,3 +29,5 @@ https://werhawer.github.io/react_photogalery/
 https://werhawer.github.io/todo_react/
 
 https://werhawer.github.io/weather_API/
+
+https://werhawer.github.io/maze/ (mini-game)
