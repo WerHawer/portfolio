@@ -7,6 +7,7 @@ body {
 }
 
 * {
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -386,6 +387,10 @@ body {
     justify-content: center;
     margin: 0 auto;
   }
+
+  .goods li:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1000px) {
   .slider_text p,
@@ -412,6 +417,10 @@ body {
   .goods ul {
     width: 320px;
   }
+
+  .goods li {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -430,7 +439,7 @@ body {
     justify-content: space-between;
     width: 100%;
     justify-content: center;
-    margin-right: 0;
+    padding-right: 0;
   }
 
   .menu ul {
