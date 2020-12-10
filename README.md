@@ -16,10 +16,6 @@ https://werhawer.github.io/portfolio/mogo_page/
 
 https://werhawer.github.io/portfolio/goIt_adaptive_page/build/
 
-JS:
-
-https://werhawer.github.io/portfolio/register_form/
-
 React:
 
 https://werhawer.github.io/react_photogalery/
